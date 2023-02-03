@@ -18,6 +18,8 @@ class AppState extends EventEmitter {
   players = []
  /** @type {import('./Models/Player').Player | null} */
   player = null
+
+  game = false
 }
 
 export const appState = new Proxy(new AppState(), {

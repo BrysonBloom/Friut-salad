@@ -22,7 +22,6 @@ export class PlayersController{
         playersServices.createPlayer(formData)
         form.reset()
         setAttributes('name', 'disabled', 'true')
-        removeAttributes('player-input', 'disabled')
     }
 
     drawLeaderBoard(){
