@@ -1,0 +1,29 @@
+/* BASIC STYLES HERE */
+main{
+  background-image: url("../img/fruit-background.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+p{
+  margin: 0;
+}
+
+.Mprimary{
+  background-color: #34d96b9e;
+}
+
+.font-shadow{
+  text-shadow: .5px .5px 1px rgba(255, 255, 255, 0.495) ;
+}
+
+#fruit-card{
+  width: 70%;
+}
+#score-card{
+  width: 30%;
+}
+
+#input{
+  width: 75%;
+}

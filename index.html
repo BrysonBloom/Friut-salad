@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
+    integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>W3-D4-LAB</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
+      <a class="navbar-brand ms-3" href="#">
+        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+          loading="lazy">
+        <span class="ms-2">W3-D4-LAB</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <!-- SECTION PLAYER INSERTION -->
+      <div class="row pt-5 justify-content-end">
+        <div class="col-4">
+          <form class="py-3 rounded Mprimary d-flex justify-content-center align-items-center">
+            <label for="name" class="p-2">
+              <p class="fs-3">Enter name:</p>
+            </label>
+            <!-- STUB Gets the player name -->
+            <input type="text" id="name" name="name">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- SECTION GAME CONTAINER -->
+      <div class="row">
+        <div class="col-12">
+
+          <div class="row text-center">
+            <div class="col-8">
+              <div class="bg-dark py-2">
+                <div class="card my-5 mx-auto" id="fruit-card">
+                  <!-- STUB Displays the random fruit String -->
+                  <p class="fs-1 fw-semibold" id="random-fruit"></p>
+                </div>
+                <div class="card my-5 mx-auto py-1" id="score-card">
+                  <!-- STUB Displays the current player score -->
+                  <p class="fs-3">Score</p>
+                </div>
+                <form>
+                  <!-- STUB input to check if they can spell -->
+                  <input class="mb-4" type="text" name="input" id="input" placeholder="TYPE HERE...">
+                </form>
+              </div>
+            </div>
+            <!-- SECTION SCORE BOARD CONTAINER -->
+            <div class="col-3 mx-auto">
+              <div id="scoreboard-container" class="mt-3">
+                <!-- STUB Player score is inserted here -->
+                <div class="bg-warning my-2 border border-3 border-light">
+                  <p class="py-2 fs-4 fw-bold font-shadow">Name: 13</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 💖 by CodeWorks</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>
