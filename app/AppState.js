@@ -14,7 +14,10 @@ class AppState extends EventEmitter {
   "Star fruit", "Strawberry", "Tangerine", "Ugli fruit", "Watermelon"]
   /** @type {import('./Models/Fruit').Fruit} */
   fruit = null
-
+ /** @type {import('./Models/Player').Player[]} */
+  players = []
+ /** @type {import('./Models/Player').Player | null} */
+  player = null
 }
 
 export const appState = new Proxy(new AppState(), {
