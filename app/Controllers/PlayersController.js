@@ -1,12 +1,11 @@
 import { appState } from "../AppState.js";
 import { playersServices } from "../Services/PlayersServices.js";
 import { getFormData } from "../Utils/FormHandler.js";
-import { setHTML, setText } from "../Utils/Writer.js";
+import {removeAttributes, setAttributes, setHTML, setText } from "../Utils/Writer.js";
 
 
 export class PlayersController{
     _drawPlayer(){
-        console.log(appState.player)
         setText('current-player', `Current Player: ${appState.player.name}`)
     }
 
@@ -22,6 +21,8 @@ export class PlayersController{
         const formData = getFormData(form)
         playersServices.createPlayer(formData)
         form.reset()
+        setAttributes('name', 'disabled', 'true')
+        removeAttributes('player-input', 'disabled')
     }
 
     drawLeaderBoard(){
@@ -34,7 +35,6 @@ export class PlayersController{
         </div>
         `
         })
-        setHTML('scoreboard-container', template)
     }
     
 }
