@@ -35,7 +35,8 @@
         </div>
         <div class="col-4">
           <!-- STUB The Form -->
-          <form class="py-3 rounded Mprimary d-flex justify-content-center align-items-center" onsubmit="app.playersController.createPlayer()">
+          <form class="py-3 rounded Mprimary d-flex justify-content-center align-items-center"
+            onsubmit="app.playersController.createPlayer()">
             <label for="name" class="p-2">
               <p class="fs-3">Enter name:</p>
             </label>
@@ -60,11 +61,12 @@
                 </div>
                 <div class="card my-5 mx-auto py-1" id="score-card">
                   <!-- STUB Displays the current player score -->
-                  <p class="fs-3">Score</p>
+                  <p class="fs-3" id="player-score">Score</p>
                 </div>
-                <form>
-                  <!-- STUB input to check if they can spell -->
-                  <input class="mb-4 fs-3" type="text" name="player-input" id="player-input" placeholder="TYPE HERE..." disabled>
+                <!-- STUB input to check if they can spell -->
+                <form onsubmit="app.playersController.spellCheck()">
+                  <input class="mb-4 fs-3" type="text" name="player-input" id="player-input" placeholder="TYPE HERE..."
+                    disabled>
                 </form>
               </div>
             </div>
@@ -75,7 +77,7 @@
                 <!-- <div class="bg-warning my-2 border border-3 border-light">
                   <p class="py-2 fs-4 fw-bold font-shadow">Name: 13</p>
                 </div> -->
-                
+
               </div>
             </div>
           </div>

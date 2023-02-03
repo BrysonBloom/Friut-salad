@@ -11,14 +11,14 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/Fruit').Fruit[]} */
   fruits = ["Apple", "Apricot", "Avocado", "Banana", "Blackberry", "Blueberry", "Cantaloupe", "Cherry", "Coconut", "Cranberry", "Date", "Dragonfruit", "Durian", "Elderberry", "Fig", "Goji berry", "Gooseberry", "Grape", "Grapefruit", "Guava", "Honeydew", "Huckleberry", "Jackfruit", "Jambul", "Kiwi", "Kumquat", "Lemon", "Lime", "Loquat", "Lychee", "Mandarin", "Mango", "Melon", "Nectarine", "Orange", "Papaya", "Peach", "Pear", "Persimmon", "Pineapple", "Plum", "Pomegranate", "Prickly pear", "Quince", "Raspberry", "Redcurrant",
-  "Star fruit", "Strawberry", "Tangerine", "Ugli fruit", "Watermelon"]
+    "Star fruit", "Strawberry", "Tangerine", "Ugli fruit", "Watermelon"]
   /** @type {import('./Models/Fruit').Fruit} */
   fruit = null
- /** @type {import('./Models/Player').Player[]} */
+  /** @type {import('./Models/Player').Player[]} */
   players = []
- /** @type {import('./Models/Player').Player | null} */
+  /** @type {import('./Models/Player').Player | null} */
   player = null
-
+  score = 0
   game = false
 }
 
